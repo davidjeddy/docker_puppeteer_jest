@@ -1,9 +1,9 @@
-# Puppetter + Jest
+# Docker + Chrome (headless) + Puppeter + Jest
 
-Based on the article available at [end-end-tests-dont-suck-puppeteer](https://ropig.com/blog/end-end-tests-dont-suck-puppeteer/) and here [User Interface Testing with Jest and Puppeteer](https://www.valentinog.com/blog/ui-testing-jest-puppetteer/).
+Based on the article available at [end-end-tests-dont-suck-puppeteer](https://ropig.com/blog/end-end-tests-dont-suck-puppeteer/) and here [User Interface Testing with Jest and Puppeteer](https://www.valentinog.com/blog/ui-testing-jest-puppeteer/).
 
 ## Install
-`git@github.com:davidjeddy/ui-testing-jest-puppetteer.git`
+`git@github.com:davidjeddy/ui-testing-jest-puppeteer.git`
 
 ## Setup
 `npm i jest puppeteer faker --save-dev`
