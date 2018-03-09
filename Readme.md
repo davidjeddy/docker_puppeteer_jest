@@ -12,3 +12,12 @@ Based on the article available at [end-end-tests-dont-suck-puppeteer](https://ro
 
 ## Usage
 `npm test`
+
+## Output
+Terminal:
+![Terminal Output](./docs/images/readme_output.png "Terminal Output")
+
+Image (./tests/_output/...):
+![Test Image Output](./docs/images/test_1.spec.png "Test Image Output")
+
+
