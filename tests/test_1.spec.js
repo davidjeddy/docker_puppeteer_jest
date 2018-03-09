@@ -10,7 +10,7 @@ let browser;
 // Jest method
 beforeAll(async () => {
     browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     slowMo: 100,
     args: [`--window-size=${width},${height}`, `--no-sandbox`, `--disable-setuid-sandbox`]
 });
@@ -23,8 +23,8 @@ afterAll(() => {
     browser.close();
 });
 
-describe("Search Google", () => {
-    test("... for Google.", async () => {
+describe("Let Me ...", () => {
+    test("... Google That For You.", async () => {
     await page.goto(APP);
     await page.waitForSelector("#lst-ib");
     await page.screenshot({path: './tests/_output/test_1_a.spec.png', fullPage: true});
