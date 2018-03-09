@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer";
 
-const APP = "https://www.sourcetoad.com/contact/";
+const APP = "https://www.google.com/";
 const width = 1920;
 const height = 1080;
 
@@ -11,8 +11,8 @@ let browser;
 beforeAll(async () => {
     browser = await puppeteer.launch({
     headless: false,
-    slowMo: 80,
-    args: [`--window-size=${width},${height}`]
+    slowMo: 100,
+    args: [`--window-size=${width},${height}`, `--no-sandbox`, `--disable-setuid-sandbox`]
 });
 page = await browser.newPage();
 await page.setViewport({ width, height });
@@ -23,11 +23,15 @@ afterAll(() => {
     browser.close();
 });
 
-describe("Contact form", () => {
-    test("", async () => {
+describe("Search Google", () => {
+    test("... for Google.", async () => {
     await page.goto(APP);
-    await page.waitForSelector("#padding-4");
-    await page.click('#wpforms-submit-11699')
-    await page.screenshot({path: './tests/_output/test_1.spec.png', fullPage: true});
-}, 4000);
+    await page.waitForSelector("#lst-ib");
+    await page.screenshot({path: './tests/_output/test_1_a.spec.png', fullPage: true});
+    await page.type("#lst-ib", 'Let Me Google That For You');
+    await page.screenshot({path: './tests/_output/test_1_b.spec.png', fullPage: true});
+    await page.click('#sbtc > div.gstl_0.sbdd_a > div:nth-child(2) > div.sbdd_b > div > ul > li:nth-child(11) > div > span:nth-child(1) > span > input')
+    await page.waitForSelector("#pnnext > span.csb.ch");
+    await page.screenshot({path: './tests/_output/test_1_c.spec.png', fullPage: true});
+}, 15000);
 });
