@@ -1,25 +1,17 @@
-# Docker + Chrome (headless) + Puppeter + Jest
+# Puppeteer + Jest
 
-Based on the article available at [end-end-tests-dont-suck-puppeteer](https://ropig.com/blog/end-end-tests-dont-suck-puppeteer/) and here [User Interface Testing with Jest and Puppeteer](https://www.valentinog.com/blog/ui-testing-jest-puppeteer/).
+Based on the article available at [end-end-tests-dont-suck-puppeteer](https://ropig.com/blog/end-end-tests-dont-suck-puppeteer/) and here [User Interface Testing with Jest and Puppeteer](https://www.valentinog.com/blog/ui-testing-jest-puppetteer/).
 
-## Install
-`git@github.com:davidjeddy/ui-testing-jest-puppeteer.git`
-
-## Setup
-`npm i jest puppeteer faker --save-dev`
-
-`npm i babel-core babel-jest babel-preset-env --save-dev`
+## Container Service
+Build service
+```
+docker pull davidjeddy/docker_puppeteer_react
+docker build . -t docker_puppeteer_react:latest
+```
 
 ## Usage
-`npm test`
 
-## Output
-Terminal:
-
-![Terminal Output](./docs/images/readme_output.png "Terminal Output")
-
-Test output images (./tests/_output/...):
-
-![Test Image Output](./docs/images/test_1.spec.png "Test Image Output")
-
-
+```
+docker-compose up -d 
+docker exec -it docker_puppeteer_react jest
+```
