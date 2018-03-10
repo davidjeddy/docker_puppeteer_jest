@@ -3,6 +3,6 @@ version: "2"
 services:
   docker_puppeteer_react:
     container_name: docker_puppeteer_react
-    image: docker_puppeteer_react:latest
+    image: davidjeddy/docker_puppeteer_react:latest
     volumes:
       - ./:/app

@@ -4,11 +4,6 @@ Based on the article available at [end-end-tests-dont-suck-puppeteer](https://ro
 
 ## Container Service
 
-**Pull Image**
-```
-docker pull davidjeddy/docker_puppeteer_react
-```
-
 **Start Service**
 ```
 docker-compose up -d 
