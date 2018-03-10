@@ -1,8 +1,7 @@
-import puppeteer from "puppeteer";
-
-const APP = "https://www.google.com/";
-const width = 1920;
+const app = "https://www.google.com/";
+const puppeteer = require("/usr/local/lib/node_modules/puppeteer");
 const height = 1080;
+const width = 1920;
 
 let page;
 let browser;
@@ -25,7 +24,7 @@ afterAll(() => {
 
 describe("Let Me ...", () => {
     test("... Google That For You.", async () => {
-    await page.goto(APP);
+    await page.goto(app);
     await page.waitForSelector("#lst-ib");
     await page.screenshot({path: './tests/_output/test_1_a.spec.png', fullPage: true});
     await page.type("#lst-ib", 'Let Me Google That For You');

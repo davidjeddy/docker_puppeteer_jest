@@ -3,11 +3,15 @@
 Based on the article available at [end-end-tests-dont-suck-puppeteer](https://ropig.com/blog/end-end-tests-dont-suck-puppeteer/) and here [User Interface Testing with Jest and Puppeteer](https://www.valentinog.com/blog/ui-testing-jest-puppetteer/).
 
 ## Container Service
+Build service
 ```
-docker pull davidjeddy/docker_react_puppeteer
-docker build . -t docker_react_puppeteer:latest
-docker run -d --name docker_react_puppeteer docker_react_puppeteer
-docker exec -it docker_react_puppeteer bash
+docker pull davidjeddy/docker_puppeteer_react
+docker build . -t docker_puppeteer_react:latest
 ```
 
- ... then use `docker logs -f docker_react_puppeteer` to see it working. 
+## Usage
+
+```
+docker-compose up -d 
+docker exec -it docker_puppeteer_react jest
+```
