@@ -2,7 +2,7 @@ version: "2"
 
 services:
   docker_puppeteer_react:
-    build: .
     container_name: docker_puppeteer_react
+    image: docker_puppeteer_react:latest
     volumes:
       - ./:/app
