@@ -2,17 +2,19 @@
 
 Based on the article available at [end-end-tests-dont-suck-puppeteer](https://ropig.com/blog/end-end-tests-dont-suck-puppeteer/) and here [User Interface Testing with Jest and Puppeteer](https://www.valentinog.com/blog/ui-testing-jest-puppetteer/).
 
-## Container Service
+## Usage
+**Pull Image**
+```
+docker pull davidjeddy/docker_puppeteer_react
+```
 
-**Start Service**
+**Run Puppeteer via Jest Test Suite**
 ```
-docker-compose up -d 
+docker run -t -v $(pwd):/app --name dpr --rm davidjeddy/docker_puppeteer_react
 ```
 
-**Run Test Suite/s**
-```
-docker exec -it docker_puppeteer_react jest
-```
+**With docker-compose.yml**
+ - See ./docker-compose.yml
 
 The current directory is mounted into the container at `/app`.
 
