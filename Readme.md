@@ -13,6 +13,8 @@ docker pull davidjeddy/docker_puppeteer_react
 docker run -t -v $(pwd):/app --name dpr --rm davidjeddy/docker_puppeteer_react
 ```
 
+Bonus: Execute via `./run.sh`.
+
 **With docker-compose.yml**
  - See ./docker-compose.yml
 
