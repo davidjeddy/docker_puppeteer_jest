@@ -25,3 +25,7 @@ Build Image
 ```
 docker build .
 ```
+## Extra
+
+The error `Async callback was not invoked withing the 5000ms timout specified by jest.setTimeout` is thrown when the 
+test does not complete in the default time. Refer to the Jest documents to adjust timeout as needed.
