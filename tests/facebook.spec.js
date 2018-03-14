@@ -1,5 +1,5 @@
 const app = "https://www.facebook.com/";
-const puppeteer = require("/usr/local/lib/node_modules/puppeteer");
+const puppeteer = require("../node_modules/puppeteer");
 const height = 1080;
 const width = 1920;
 const path = './tests/_output/';

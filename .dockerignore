@@ -1,0 +1,5 @@
+/jest_*
+/app/tests
+docker-compose.yml
+Readme.md
+run.sh

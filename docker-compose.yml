@@ -5,4 +5,4 @@ services:
     container_name: docker_puppeteer_jest
     image: davidjeddy/docker_puppeteer_jest:latest
     volumes:
-      - ./:/app
+      - ./tests:/app/tests
