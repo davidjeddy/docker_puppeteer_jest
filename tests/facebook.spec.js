@@ -12,12 +12,12 @@ var debug = false;
 // Jest method
 beforeAll(async () => {
     browser = await puppeteer.launch({
-    headless: ( debug === true ? false : true),
-    slowMo: ( debug === true ? 100 : 0),
-    args: [`--window-size=${width},${height}`, `--no-sandbox`, `--disable-setuid-sandbox`]
-});
-page = await browser.newPage();
-await page.setViewport({ width, height });
+        headless: ( debug === true ? false : true),
+        slowMo: ( debug === true ? 100 : 0),
+        args: [`--window-size=${width},${height}`, `--no-sandbox`, `--disable-setuid-sandbox`]
+    });
+    page = await browser.newPage();
+    await page.setViewport({ width, height });
 });
 
 // Jest method
