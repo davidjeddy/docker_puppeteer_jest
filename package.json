@@ -1,5 +1,5 @@
 {
-  "name": "docker_puppeteer_react",
+  "name": "docker_puppeteer_jest",
   "version": "0.1.0",
   "description": "Dockerized Puppeteer and React",
   "main": "index.js",

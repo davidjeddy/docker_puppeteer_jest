@@ -5,12 +5,12 @@ Based on the article available at [end-end-tests-dont-suck-puppeteer](https://ro
 ## Usage
 **Pull Image**
 ```
-docker pull davidjeddy/docker_puppeteer_react
+docker pull davidjeddy/docker_puppeteer_jest
 ```
 
 **Run Puppeteer via Jest Test Suite**
 ```
-docker run -t -v $(pwd):/app --name dpr --rm davidjeddy/docker_puppeteer_react
+docker run -t -v $(pwd):/app --name dpr --rm davidjeddy/docker_puppeteer_jest
 ```
 
 Bonus: Execute via `./run.sh`.
