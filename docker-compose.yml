@@ -1,8 +1,0 @@
-version: "2"
-
-services:
-  docker_puppeteer_jest:
-    container_name: docker_puppeteer_jest
-    image: davidjeddy/docker_puppeteer_jest:latest
-    volumes:
-      - ./tests:/app/tests
