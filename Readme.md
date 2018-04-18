@@ -29,3 +29,7 @@ You should now have test output results in the CLI output, as well as screen cap
 ## Extra
 
 If you get the  error `Async callback was not invoked withing the 5000ms timout specified by jest.setTimeout`, refer to the [Jest documention](https://facebook.github.io/jest/docs/en/troubleshooting.html) for how to adjust timeout as needed.
+
+## Troubleshooting
+
+The Google Chrome teams offers some assistance when using Puppetter over on thier [GitHub project page](https://github.com/GoogleChrome/puppeteer).
