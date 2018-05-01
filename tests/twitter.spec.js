@@ -28,7 +28,7 @@ afterAll(() => {
 describe("Twitter", () => {
     test("Login view loaded.", async () => {
         await page.goto(app);
-        await page.waitForSelector("div.StaticLoggedOutHomePage-field.StaticLoggedOutHomePage-password > input");
+        await page.waitForSelector("#doc > div > div.StreamsFooter.StreamsFooter--fixed > ul > li.StreamsFooter-item.StreamsFooter-copyright");
         await page.screenshot({path: path+'test_2_a.spec.png', fullPage: true});
     });
 });

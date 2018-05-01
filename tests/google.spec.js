@@ -32,7 +32,7 @@ describe("Let Me ...", () => {
         await page.screenshot({path: path+'test_1_a.spec.png', fullPage: true});
         await page.type("#lst-ib", 'Let Me Google That For You');
         await page.screenshot({path: path+'test_1_b.spec.png', fullPage: true});
-        await page.click('#sbtc > div.gstl_0.sbdd_a > div:nth-child(2) > div.sbdd_b > div > ul > li:nth-child(11) > div > span:nth-child(1) > span > input')
+        await page.click('#tsf > div.tsf-p > div.jsb > center > input[type="submit"]:nth-child(1)');
         await page.waitForSelector("#pnnext > span.csb.ch");
         await page.screenshot({path: path+'test_1_c.spec.png', fullPage: true});
     });
