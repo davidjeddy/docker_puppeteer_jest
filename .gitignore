@@ -1,0 +1,5 @@
+# Node / NPM
+node_modules/
+tests/_output/
+.idea/workspace.xml
+jest_0/
