@@ -1,0 +1,22 @@
+{
+  "name": "docker_puppeteer_react",
+  "version": "0.1.0",
+  "description": "Dockerized Puppeteer and React",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.2",
+    "puppeteer": "^1.1.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "David J Eddy <me@davidjeddy.com>",
+  "license": "MIT"
+}
